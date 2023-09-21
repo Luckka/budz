@@ -28,7 +28,7 @@ class AppTextStyles {
   static const bodyMedium = TextStyle(
     fontSize: 12,
     fontFamily: AppConstants.outfitFontFamily,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
     color: AppColors.subtitleText,
   );
   static const bodySmall = TextStyle(
