@@ -12,6 +12,13 @@ class AppTextStyles {
     fontWeight: FontWeight.w700,
     color: AppColors.blackText
   );
+
+  static const titleCategory = TextStyle(
+    fontSize: 16,
+    fontFamily: AppConstants.outfitFontFamily,
+    fontWeight: FontWeight.w400,
+    color: AppColors.blackText
+  );
   static const labelMedium = TextStyle(
     fontSize: 14,
     fontFamily: AppConstants.outfitFontFamily,

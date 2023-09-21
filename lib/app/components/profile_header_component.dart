@@ -24,7 +24,7 @@ class ProfileHeaderComponent extends StatelessWidget {
         top: mediaQuery.viewPadding.top + 22,
         left: 16,
         right: 16,
-        bottom: 22,
+        bottom: 10,
       ),
       color: Colors.white,
       child: Column(
