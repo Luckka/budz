@@ -3,4 +3,5 @@ class AppRoutes {
 
   static const editProfile = '/profile';
   static const deleteAccountDetails = '/delete_account_details';
+  static const deleteAccountFinished = '/deleteAccountFinished'; 
 }

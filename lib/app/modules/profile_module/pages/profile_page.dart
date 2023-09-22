@@ -3,9 +3,9 @@ import 'package:budz/app/components/profile_header_component.dart';
 import 'package:budz/app/data/mock.dart';
 import 'package:flutter/material.dart';
 
-import '../components/bottom_navigation_bar_component.dart';
-import '../theme/app_colors.dart';
-import '../theme/app_text_styles.dart';
+import '../../../components/bottom_navigation_bar_component.dart';
+import '../../../theme/app_colors.dart';
+import '../../../theme/app_text_styles.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
