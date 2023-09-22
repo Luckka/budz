@@ -19,13 +19,21 @@ class EditProfilePage extends StatelessWidget {
     final dropOpcoes = ['Masculino', 'Feminino'];
     var size = MediaQuery.of(context).size;
     return  Scaffold(
+        
         appBar: AppBar(
+
           centerTitle: true,
           elevation: 0,
           backgroundColor: AppColors.white,
-          leading: Icon(
-            Icons.arrow_back,
-            color: AppColors.blackText,
+          
+          leading: InkWell(
+            onTap: () {
+              Modular.to.navigate("/");
+            },
+            child: Icon(
+              Icons.arrow_back,
+              color: AppColors.blackText,
+            ),
           ),
           title: Text(
             "Editar Perfil",

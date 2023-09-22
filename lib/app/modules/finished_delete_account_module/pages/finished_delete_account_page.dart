@@ -10,12 +10,30 @@ class FinishedDeleteAccountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title:  Padding(
+          padding: const EdgeInsets.only(right:50.0),
+          child: Center(child: Image.asset("assets/logotype.png")),
+        ),
+        leading: InkWell(
+            onTap: () {
+              Modular.to.navigate("/");
+            },
+            child: Icon(
+              Icons.close,
+              color: AppColors.blackText,
+            ),
+          ),
+        backgroundColor: AppColors.white,
+        elevation: 0,
+        
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
                 SizedBox(height: 24),
-              Center(child: Image.asset("assets/logotype.png")),
+             
               Column(
         
                 mainAxisAlignment: MainAxisAlignment.center,
