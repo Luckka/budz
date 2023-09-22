@@ -8,4 +8,5 @@ class AppColors {
   static const subtitleText = Color(0xFF3A484D);
   static const blackText = Color(0xFF171D1F);
   static const border = Color(0XFFB3BBBF);
+  static const blueTitle = Color(0XFF2371EE);
 }

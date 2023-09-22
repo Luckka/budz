@@ -1,4 +1,6 @@
+import 'package:budz/app/routes/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class AppMock {
   const AppMock._();
@@ -11,19 +13,19 @@ class AppMock {
     CategoryCard(
       topLeft: 16,
       topRight: 16,
-      image: "assets/pet.png", title: "Meus Pets", icon: Icons.arrow_right),
+      image: "assets/pet.png", title: "Meus Pets", icon: Icons.arrow_right, onTap: () {  }),
     CategoryCard(
         image: "assets/profile.png",
         title: "Editar Perfil",
-        icon: Icons.arrow_right),
+        icon: Icons.arrow_right, onTap: () => Modular.to.navigate(AppRoutes.editProfile)),
     CategoryCard(
-        image: "assets/tools.png", title: "Ferramentas", icon: Icons.arrow_right),
+        image: "assets/tools.png", title: "Ferramentas", icon: Icons.arrow_right, onTap: () {  }),
     CategoryCard(
-        image: "assets/premium.png", title: "Gerenciar Assinatura", icon: Icons.arrow_right),
+        image: "assets/premium.png", title: "Gerenciar Assinatura", icon: Icons.arrow_right, onTap: () {  }),
     CategoryCard(
         bottomLeft: 16,
         bottomRight: 16,
-        image: "assets/lock.png", title: "Alterar Senha", icon: Icons.arrow_right),
+        image: "assets/lock.png", title: "Alterar Senha", icon: Icons.arrow_right, onTap: () {  }),
   ];
 }
 
@@ -35,7 +37,8 @@ class CategoryCard {
   final double? topLeft;
   final double? bottomRight;
   final double? bottomLeft;
+  final Function()? onTap;
 
 
-  CategoryCard({required this.image, required this.title, required this.icon,this.topRight, this.topLeft, this.bottomRight, this.bottomLeft,});
+  CategoryCard({required this.image, required this.title, required this.icon,this.topRight, this.topLeft, this.bottomRight, this.bottomLeft,required this.onTap,});
 }

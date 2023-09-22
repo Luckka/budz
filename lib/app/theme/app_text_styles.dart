@@ -19,6 +19,20 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.blackText
   );
+
+  static const labelInputText = TextStyle(
+    fontSize: 16,
+    fontFamily: AppConstants.outfitFontFamily,
+    fontWeight: FontWeight.w600,
+    color: AppColors.blackText
+  );
+
+  static const titleAppBar = TextStyle(
+    fontSize: 18,
+    fontFamily: AppConstants.outfitFontFamily,
+    fontWeight: FontWeight.w700,
+    color: AppColors.blackText
+  );
   static const labelMedium = TextStyle(
     fontSize: 14,
     fontFamily: AppConstants.outfitFontFamily,

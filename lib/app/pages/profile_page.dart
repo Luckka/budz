@@ -19,7 +19,7 @@ class ProfilePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ProfileHeaderComponent(
+            const ProfileHeaderComponent(
               userName: AppMock.userName,
               email: AppMock.email,
               userImage: AppMock.userImage,
@@ -40,6 +40,7 @@ class ProfilePage extends StatelessWidget {
                         topRight: item.topRight ?? 0,
                         bottomLeft: item.bottomLeft ?? 0,
                         bottomRight: item.bottomRight ?? 0,
+                        onTap: item.onTap,
                       );
                     },
                     itemCount: AppMock.card.length),
@@ -51,7 +52,7 @@ class ProfilePage extends StatelessWidget {
                 height: 64,
                 decoration: BoxDecoration(
                   border: Border.all(color: AppColors.border),
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(16),
                     topRight: Radius.circular(16),
                     bottomLeft: Radius.circular(16),

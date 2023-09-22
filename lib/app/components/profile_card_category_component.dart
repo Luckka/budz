@@ -9,6 +9,7 @@ class ProfileCardCategoryComponent extends StatelessWidget {
   final double topLeft;
   final double bottomLeft;
   final double bottomRight;
+  final Function()? onTap;
   const ProfileCardCategoryComponent(
       {super.key,
       required this.image,
@@ -16,7 +17,8 @@ class ProfileCardCategoryComponent extends StatelessWidget {
       required this.topRight,
       required this.topLeft,
       required this.bottomLeft,
-      required this.bottomRight});
+      required this.bottomRight,
+      required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +50,12 @@ class ProfileCardCategoryComponent extends StatelessWidget {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 20.0),
-            child: const Icon(Icons.keyboard_arrow_right_outlined),
+          InkWell(
+            onTap: onTap,
+            child: Padding(
+              padding: const EdgeInsets.only(right: 20.0),
+              child: const Icon(Icons.keyboard_arrow_right_outlined),
+            ),
           )
         ],
       ),
